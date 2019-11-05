@@ -3,6 +3,10 @@ package Homework_1;
 import java.util.Scanner;
 
 public class ConsoleCalc {
+    float result = 0;
+    char operation = input1();
+    float number1 = input2();
+    float number2 = input3();
 
     private static char input1() {
         Scanner in = new Scanner(System.in);
@@ -13,7 +17,7 @@ public class ConsoleCalc {
     private static float input2() {
 
         Scanner in = new Scanner(System.in);
-        System.out.print("Input second integer: ");
+        System.out.print("Input first float: ");
         float float2 = in.nextFloat();
         return float2;
     }
@@ -21,16 +25,20 @@ public class ConsoleCalc {
     private static float input3() {
 
         Scanner in = new Scanner(System.in);
-        System.out.print("Input first integer: ");
+        System.out.print("Input second float: ");
         float float1 = in.nextFloat();
         return float1;
     }
 
-    public static void operation() {
-        float result = 0;
-        char operation = input1();
-        float number1 = input2();
-        float number2 = input3();
+    public static void inputRun(){
+
+    }
+
+    public float calculationLogic() {
+//        float result = 0;
+//        char operation = input1();
+//        float number1 = input2();
+//        float number2 = input3();
 
         switch (operation) {
             case '+':
@@ -48,9 +56,13 @@ public class ConsoleCalc {
             default:
                 System.out.println("error");
         }
-        System.out.println("Result: " + result);
+        return result;
+    }
 
+    public String resultDisplay() {
 
+        String resultDisplay = String.valueOf(number1) + " " + String.valueOf(operation) + " " + String.valueOf(number2);
+        return resultDisplay;
     }
 }
 
