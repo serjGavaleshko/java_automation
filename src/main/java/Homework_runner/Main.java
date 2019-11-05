@@ -8,7 +8,9 @@ public class Main {
 //
 //new Person().personIdent();
 // Student().getResponse();
-        new HomeWorkRunner().runner();
+        //new HomeWorkRunner().runner();
+        new Classwork_9.Student("her","dermo");
+
 
 
     }

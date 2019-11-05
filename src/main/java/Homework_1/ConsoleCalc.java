@@ -31,6 +31,7 @@ public class ConsoleCalc {
         char operation = input1();
         float number1 = input2();
         float number2 = input3();
+
         switch (operation) {
             case '+':
                 result = number1 + number2;

@@ -11,9 +11,9 @@ public class HomeWorkRunner {
         int hwnumber = in.nextInt();
 
         switch (hwnumber) {
-//            case 1:
-//                new Homework_1.ConsoleCalc().insertion();
-//                break;
+            case 1:
+                new Homework_1.ConsoleCalcRun().runner();
+                break;
             case 2:
                 new Homework_2.NarrowingCasting().narrowing();
                 new Homework_2.WideningCasting().widening();
