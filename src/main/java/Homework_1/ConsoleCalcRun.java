@@ -2,9 +2,13 @@ package Homework_1;
 
 public class ConsoleCalcRun extends Homework_1.ConsoleCalc {
 
-    public void runner() {
+    public String runner() {
 
-        System.out.println(resultDisplay() + " = " + calculationLogic());
+        String printer = getResultDisplay() + " = " + getResult();
+        System.out.println(printer);
+        return printer;
 
     }
+
+
 }

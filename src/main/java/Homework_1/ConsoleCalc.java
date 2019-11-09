@@ -3,6 +3,12 @@ package Homework_1;
 import java.util.Scanner;
 
 public class ConsoleCalc {
+
+    public ConsoleCalc(){
+
+        calculationLogic();
+    }
+
     float result = 0;
     char operation = input1();
     float number1 = input2();
@@ -30,15 +36,7 @@ public class ConsoleCalc {
         return float1;
     }
 
-    public static void inputRun(){
-
-    }
-
-    public float calculationLogic() {
-//        float result = 0;
-//        char operation = input1();
-//        float number1 = input2();
-//        float number2 = input3();
+      private void calculationLogic() {
 
         switch (operation) {
             case '+':
@@ -56,13 +54,18 @@ public class ConsoleCalc {
             default:
                 System.out.println("error");
         }
-        return result;
     }
-
-    public String resultDisplay() {
-
+    private String resultDisplay() {
         String resultDisplay = String.valueOf(number1) + " " + String.valueOf(operation) + " " + String.valueOf(number2);
         return resultDisplay;
+
+    }
+
+    public String getResultDisplay() {
+        return resultDisplay();
+    }
+    public float getResult() {
+        return result;
     }
 }
 
